@@ -8,6 +8,8 @@ You can use below link to install and configure and ensure its available
 https://github.com/kohlidevops/anisble-shell-collect-system-metrics
 ```
 
+![image](https://github.com/kohlidevops/ansible-patching/assets/100069489/a9cac6dc-a88f-4b96-bcdb-3ee14ffadfd2)
+
 I can able to ping to my linux based hosts
 
 ![image](https://github.com/kohlidevops/ansible-patching/assets/100069489/7a6a6102-51e7-4189-9681-ed59ae41a02a)

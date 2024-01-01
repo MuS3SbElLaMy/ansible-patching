@@ -32,3 +32,20 @@ https://github.com/kohlidevops/ansible-patching/blob/main/upgradingkernel.yml
 ```
 
 ![image](https://github.com/kohlidevops/ansible-patching/assets/100069489/e6f9201b-2144-4706-b092-8410ab46fa8c)
+
+### Ansible playbook to install httpd and Apache2 to linux hosts
+
+You can use below link to install webserver
+
+```
+https://github.com/kohlidevops/ansible-patching/blob/main/HttpdApache2Installation.yml
+```
+
+![image](https://github.com/kohlidevops/ansible-patching/assets/100069489/1c4db31e-7d5c-4024-ae80-8830591e1a61)
+
+### Ansible playbook to copy index.html to Linux hosts and restart the machine
+
+```
+```
+
+![image](https://github.com/kohlidevops/ansible-patching/assets/100069489/48fc6d23-3efc-4a3f-993c-4b24ec4e6a7b)

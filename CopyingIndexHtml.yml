@@ -1,0 +1,29 @@
+---
+- name: Copy Custom index.html and Restart Apache on RHEL and Ubuntu
+  hosts: patching
+  become: yes  # Run tasks with elevated privileges (sudo)
+
+  tasks:
+    - name: Copy Custom index.html to RHEL
+      when: "'RedHat' in ansible_facts['os_family']"
+      copy:
+        src: /home/ubuntu/index.html  # Update this path to your custom file
+        dest: /var/www/html/index.html   # Update the destination path on RHEL
+
+    - name: Copy Custom index.html to Ubuntu
+      when: "'Debian' in ansible_facts['os_family']"
+      copy:
+        src: /home/ubuntu/index.html  # Update this path to your custom file
+        dest: /var/www/html/index.html   # Update the destination path on Ubuntu
+
+    - name: Restart Apache on RHEL
+      when: "'RedHat' in ansible_facts['os_family']"
+      systemd:
+        name: httpd
+        state: restarted
+
+    - name: Restart Apache2 on Ubuntu
+      when: "'Debian' in ansible_facts['os_family']"
+      systemd:
+        name: apache2
+        state: restarted

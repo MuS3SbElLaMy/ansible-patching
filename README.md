@@ -16,3 +16,18 @@ I can able to ping to my linux based hosts
 
 Here is a basic example of an Ansible playbook to update packages on Ubuntu and RHEL (Red Hat Enterprise Linux) machines. Note that the exact commands may vary slightly based on the specific package manager used by the distribution.
 
+You can use below link to work on it.
+
+```
+https://github.com/kohlidevops/ansible-patching/blob/main/upgradingpackage.yml
+```
+![image](https://github.com/kohlidevops/ansible-patching/assets/100069489/d880e33b-8f5a-4698-a065-af32937c8755)
+
+### Ansible playbook to update kernel
+
+You can use below link to work on it
+
+```
+```
+
+![image](https://github.com/kohlidevops/ansible-patching/assets/100069489/e6f9201b-2144-4706-b092-8410ab46fa8c)

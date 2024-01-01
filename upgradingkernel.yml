@@ -1,0 +1,21 @@
+---
+- name: Patch Kernel on Ubuntu and RHEL machines
+  hosts: patching
+  become: yes  # Run tasks with elevated privileges (sudo)
+
+  tasks:
+    - name: Update package cache
+      package_facts:
+        manager: auto
+
+    - name: Update Ubuntu kernel
+      when: "'Debian' in ansible_facts['os_family']"
+      apt:
+        name: linux-generic
+        state: latest
+
+    - name: Update RHEL kernel
+      when: "'RedHat' in ansible_facts['os_family']"
+      yum:
+        name: kernel
+        state: latest

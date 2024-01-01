@@ -28,6 +28,7 @@ https://github.com/kohlidevops/ansible-patching/blob/main/upgradingpackage.yml
 You can use below link to work on it
 
 ```
+https://github.com/kohlidevops/ansible-patching/blob/main/upgradingkernel.yml
 ```
 
 ![image](https://github.com/kohlidevops/ansible-patching/assets/100069489/e6f9201b-2144-4706-b092-8410ab46fa8c)

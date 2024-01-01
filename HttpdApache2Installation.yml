@@ -1,0 +1,17 @@
+---
+- name: Install Apache on RHEL and Ubuntu
+  hosts: patching
+  become: yes  # Run tasks with elevated privileges (sudo)
+
+  tasks:
+    - name: Install Apache on RHEL
+      when: "'RedHat' in ansible_facts['os_family']"
+      yum:
+        name: httpd
+        state: present
+
+    - name: Install Apache2 on Ubuntu
+      when: "'Debian' in ansible_facts['os_family']"
+      apt:
+        name: apache2
+        state: present

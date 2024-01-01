@@ -1,0 +1,17 @@
+---
+- name: Patch Ubuntu and RHEL machines
+  hosts: patching
+  become: yes  # Run tasks with elevated privileges (sudo)
+
+  tasks:
+    - name: Update Ubuntu packages
+      when: "ansible_distribution == 'Ubuntu'"
+      apt:
+        update_cache: yes
+        upgrade: yes
+
+    - name: Update RHEL packages
+      when: "ansible_distribution == 'RedHat'"
+      yum:
+        name: '*'
+        state: latest

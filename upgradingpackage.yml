@@ -1,6 +1,6 @@
 ---
 - name: Patch Ubuntu and RHEL machines
-  hosts: patching
+  hosts: all
   become: yes  # Run tasks with elevated privileges (sudo)
 
   tasks:

@@ -1,6 +1,6 @@
 ---
 - name: Install Apache on RHEL and Ubuntu
-  hosts: patching
+  hosts: all
   become: yes  # Run tasks with elevated privileges (sudo)
 
   tasks:

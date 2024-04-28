@@ -1,6 +1,6 @@
 ---
 - name: Copy Custom index.html and Restart Apache on RHEL and Ubuntu
-  hosts: patching
+  hosts: all
   become: yes  # Run tasks with elevated privileges (sudo)
 
   tasks:
